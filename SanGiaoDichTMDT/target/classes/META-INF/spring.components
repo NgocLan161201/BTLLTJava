@@ -1,0 +1,4 @@
+com.ntt.configs.SanGiaoDichTMDTContextConfig=org.springframework.stereotype.Component
+com.ntt.configs.TilesConfig=org.springframework.stereotype.Component
+com.ntt.controllers.AdminControllers=org.springframework.stereotype.Component
+com.ntt.controllers.IndexController=org.springframework.stereotype.Component

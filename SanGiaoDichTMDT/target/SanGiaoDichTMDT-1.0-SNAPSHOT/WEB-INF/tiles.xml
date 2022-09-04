@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="products" extends="baseLayout">
+        <put-attribute name="title" value="Quan ly san pham" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/products.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Dang Nhap" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Dang Ky" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+    <definition name="detailProduct" extends="baseLayout">
+        <put-attribute name="title" value="Chi Tiet San Pham" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/detailProduct.jsp" />
+    </definition>
+    <definition name="registrationShop" extends="baseLayout">
+        <put-attribute name="title" value="Dang Ky Cua Hang" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/registrationShop.jsp" />
+    </definition>
+    <definition name="shop" extends="baseLayout">
+        <put-attribute name="title" value="Dang Ky Cua Hang" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/shop.jsp" />
+    </definition>
+    
+    <definition name="adminBaseLayout" template="/WEB-INF/layout/admin-base.jsp">
+        <put-attribute name="title" value="..." />
+        <put-attribute name="admin-header" value="/WEB-INF/layout/admin-header.jsp" />
+        <put-attribute name="admin-footer" value="/WEB-INF/layout/admin-footer.jsp" />
+        <put-attribute name="admin-content-left" value="/WEB-INF/layout/admin-sidebar.jsp" />
+        <put-attribute name="admin-content-right" value="..." />
+    </definition>
+    <definition name="admin-index" extends="adminBaseLayout">
+        <put-attribute name="title" value="Trang Admin" />
+        <put-attribute name="admin-content-right" value="/WEB-INF/jsp/admin-index.jsp" />
+    </definition>
+    <definition name="admin-login" extends="adminBaseLayout">
+        <put-attribute name="title" value="Dang Nhap Admin" />
+        <put-attribute name="admin-content-right" value="/WEB-INF/jsp/admin-login.jsp" />
+    </definition>
+    <definition name="admin-product" extends="adminBaseLayout">
+        <put-attribute name="title" value="Quan Ly San Pham" />
+        <put-attribute name="admin-content-right" value="/WEB-INF/jsp/admin-product.jsp" />
+    </definition>
+
+    <definition name="admin-order" extends="adminBaseLayout">
+        <put-attribute name="title" value="Quan Ly Don Hang" />
+        <put-attribute name="admin-content-right" value="/WEB-INF/jsp/admin-order.jsp" />
+    </definition>
+    <definition name="admin-user" extends="adminBaseLayout">
+        <put-attribute name="title" value="Quan Ly User" />
+        <put-attribute name="admin-content-right" value="/WEB-INF/jsp/admin-user.jsp" />
+    </definition>
+
+    <definition name="admin-report" extends="adminBaseLayout">
+        <put-attribute name="title" value="Thong Ke Bao Cao" />
+        <put-attribute name="admin-content-right" value="/WEB-INF/jsp/admin-report.jsp" />
+    </definition>
+
+
+    <definition name="loginBaseLayout" template="/WEB-INF/layout/login-base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="contentLogin" value="" />
+    </definition>
+        <definition name="login-index" extends="loginBaseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="contentLogin" value="/WEB-INF/layout/login-base.jsp" />
+    </definition>
+</tiles-definitions>
